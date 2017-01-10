@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+.create-wrapper,.post-wrapper{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.post-wrapper{
+  width: 50%;
+  padding: 10px;
+  margin: 0;
+}
+.post-wrapper p{
+  font-size: 12px;
+}
+
+.create-wrapper .input-wrapper{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.create-wrapper button{
+  height: 30px;
+}
+
+.create-wrapper input{
+  margin-bottom: 5px;
+  height: 38px;
+  width: calc(50% - 2.5px);
+  padding: 5px;
+
+}
+.create-wrapper textarea{
+  height: 100px;
+  margin-bottom: 5px;
+  padding: 5px;
+
+}
+.create-wrapper.edit textarea{
+  height: 50px;
+}
+.hide{
+  display: none;
+}
+.posts-wrapper{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
