@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import storeTest from './testStore';
+
 
 class App extends React.Component{
   constructor(){
@@ -11,7 +13,8 @@ class App extends React.Component{
         params: "",
         total: 0,
         "filters": [],
-        loaded: false
+        loaded: false,
+        test: storeTest.getAll()
         };
 
     this.sort = "";
